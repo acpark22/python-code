@@ -1,0 +1,3 @@
+In Python you can make a list.
+In Python you can slice a list.
+In Python you can append items.
