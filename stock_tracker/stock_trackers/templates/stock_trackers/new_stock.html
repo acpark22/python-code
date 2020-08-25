@@ -1,0 +1,13 @@
+{% extends "stock_trackers/base.html" %}
+{% block content %}
+<p>Add a new stock:</p>
+
+<form action= "{% url 'stock_trackers:new_stock' %}" method= 'post'>
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button name= "submit">Add stock</button>
+</form>
+
+{% endblock content %}
+
+
