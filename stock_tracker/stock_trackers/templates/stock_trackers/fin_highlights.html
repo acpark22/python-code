@@ -1,0 +1,161 @@
+{% extends 'stock_trackers/base.html' %}
+{% load static %}
+{% block page_header %}
+  <h4 class="mt-1">
+    Stock
+    <small class="text-muted">Apple Inc. (AAPL)</small>
+  </h4>
+{% endblock page_header %}
+{% block content %}
+
+<body>
+<div class="container">
+  <img src="{% static "stock_trackers/aapl2.png" %}" class="rounded mx-auto d-block" width="75%">
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h5 class="mt-3">Profitability</h5>
+      <table class"mt-1">
+        <table style="width:70%">
+          <tbody>
+          <tr>
+            <td>Profit Margin</td>
+            <td>21.33%</td>
+          </tr>
+          <tr>
+            <td>Operating Margin</td>
+            <td>24.52%</td>
+          </tr>
+        </body>
+      </table>
+      <h5 class="mt-3">Income Statement</h5>
+      <table class="mt-1">
+        <table style="width:70%">
+          <tbody>
+          <tr>
+            <td>Revenue</td>
+            <td>273.86B
+          </tr>
+          <tr>
+            <td>Revenue Per Share</td>
+            <td>15.58</td>
+          </tr>
+          <tr>
+            <td>Quarterly Revenue Growth</td>
+            <td>10.90%</td>
+          </tr>
+          <tr>
+            <td>Gross Profit</td>
+            <td>98.39B</td>
+          </tr>
+          <tr>
+            <td>EBITDA</td>
+            <td>78.67B</td>
+          </tr>
+          <tr>
+            <td>Net Income Avi to Common</td>
+            <td>58.42B</td>
+          </tr>
+          <tr>
+            <td>Diluted EPS</td>
+            <td>3.30</td>
+          </tr>
+          <tr>
+            <td>Quarterly Earnings Growth</td>
+            <td>12.00%</td>
+          </tr>
+        </body>
+      </table>
+    </div>
+  <div class="col-sm-6">
+    <h5 class="mt-3">Management Effectiveness</h5>
+      <table class="mt-1">
+        <table style="width:70%">
+          <tbody>
+          <tr>
+            <td>Return of Assets</td>
+            <td>13.12%</td>
+          </tr>
+          <tr>
+            <td>Return on Equity</td>
+            <td>69.25%</td>
+          </tr>
+        </body>
+      </table>
+    <h5 class="mt-3">Balance Sheet</h5>
+      <table class="mt-1">
+        <table style="width:70%">
+          <tbody>
+          <tr>
+            <td>Total Cash</td>
+            <td>93.03B</td>
+          </tr>
+          <tr>
+            <td>Total Cash Per Share</td>
+            <td>5.44</td>
+          </tr>
+          <tr>
+            <td>Total Debt</td>
+            <td>122.19B</td>
+          </tr>
+          <tr>
+            <td>Total Debt/Equity</td>
+            <td>169.04</td>
+          </tr>
+          <tr>
+            <td>Current Ratio</td>
+            <td>1.47</td>
+          </tr>
+          <tr>
+            <td>Book Value Per Share</td>
+            <td>4.22</td>
+          </tr>
+        </body>
+      </table>
+    </div>
+  </div>
+  <h5 class="mt-4">Environmental Social Governance</h5>
+  <table class="table">
+    <caption>MSCI ESG Ratings</caption>
+    <thead>
+      <tr>
+        <th scope="col">Key Issues</th>
+        <th scope="col">ESG Ratings</th>
+      </tr>
+      <tbody>
+        <tr>
+          <th scope="row">Corporate Governance</th>
+          <td>Industry Average</td>
+        </tr>
+        <tr>
+          <th scope="row">Human Capital Development</th>
+          <td>Industry Average</td>
+        </tr>
+        <tr>
+          <th scope="row">Opportunities in Clean Tech</th>
+          <td>ESG Leader</td>
+        </tr>
+        <tr>
+          <th scope="row">Controversial Sourcing</th>
+          <td>ESG Leader</td>
+        </tr>
+        <tr>
+          <th scope="row">Privacy & Data Security</th>
+          <td>Industry Average</td>
+        </tr>
+        <tr>
+          <th scope="row">Supply Chain Labor Standards</th>
+          <td>Industry Average</td>
+        </tr>
+        <tr>
+          <th scope="row">Electronic Waste</th>
+          <td>Industry Average</td>
+        </tr>
+      </tbody>
+    </table>
+</body>
+</html>
+
+  {% endblock content %} 
