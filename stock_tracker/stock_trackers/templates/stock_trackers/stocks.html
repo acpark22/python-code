@@ -1,20 +1,20 @@
 {% extends "stock_trackers/base.html" %}
 
 {% block page_header %}
-  <h1>Stocks</h1>
+  <h4 class="mt-1">Stocks</h4>
 {% endblock page_header %}
 
 {% block content %}
   <ul>
     {% for stock in stocks %}
-      <li><h3>
+      <li><h5>
         <a href= "{% url 'stock_trackers:stock' stock.id %}">{{ stock }}</a>
-      </h3></li>
+      </h5></li>
     {% empty %}
-      <li><h3>No stocks have been added yet.</h3></li>
+      <li><h5>No stocks have been added yet.</h5></li>
     {% endfor %}
   </ul>
 
-  <h3><a href= "{% url 'stock_trackers:new_stock' %}">Add a new stock</a></h3>
+  <h5><a href= "{% url 'stock_trackers:new_stock' %}">Add a new stock</a></h5>
 {% endblock content %}
 

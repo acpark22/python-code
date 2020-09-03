@@ -73,6 +73,9 @@ def edit_entry(request, entry_id):
     context= {'entry': entry, 'stock': stock, 'form': form}
     return render(request, 'stock_trackers/edit_entry.html', context)
 
+def fin_highlights(request):
+    """Showing financial stats and graphs."""
+    return render(request, 'stock_trackers/fin_highlights.html')
 
 
 

@@ -17,5 +17,7 @@ urlpatterns= [
     path('new_entry/<int:stock_id>/', views.new_entry, name= 'new_entry'),
     # Page for editing notes.
     path('edit_entry/<int:entry_id>/', views.edit_entry, name= 'edit_entry'),
+    # Page for financial highlights of the stock
+    path('fin_highlights/', views.fin_highlights, name= 'fin_highlights'),
     ]
 
