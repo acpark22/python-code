@@ -1,0 +1,6 @@
+# Procfile tells Heroku which processes to start to properly serve the 
+# project. Line tells Heroku to use gunicorn as a server and to use the 
+# settings in 'stock_tracker/wsgi.py' to launch the app. 
+# 'log-file' flag tells Heroku the kinds of events to log.
+
+web: gunicorn stock_tracker.wsgi --log-file -
